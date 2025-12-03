@@ -9,6 +9,7 @@ import {
   Facebook,
 } from "lucide-react";
 import DonationModal from "./DonationModal";
+import VolunteerModal from "./VolunteerModal";
 
 // Custom TikTok icon since it might not be in all versions of lucide-react or to ensure specific styling if needed.
 // However, assuming recent lucide-react has it or we use a text fallback/generic if missing.
@@ -28,6 +29,7 @@ import DonationModal from "./DonationModal";
 
 const Footer: React.FC = () => {
   const [isDonationModalOpen, setIsDonationModalOpen] = useState(false);
+  const [isVolunteerModalOpen, setIsVolunteerModalOpen] = useState(false);
 
   return (
     <>
@@ -121,12 +123,12 @@ const Footer: React.FC = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="hover:text-secondary-500 transition-colors"
+                  <button
+                    onClick={() => setIsVolunteerModalOpen(true)}
+                    className="hover:text-secondary-500 transition-colors text-left"
                   >
                     Volunteer
-                  </a>
+                  </button>
                 </li>
                 <li>
                   <button
@@ -205,6 +207,10 @@ const Footer: React.FC = () => {
       <DonationModal
         isOpen={isDonationModalOpen}
         onClose={() => setIsDonationModalOpen(false)}
+      />
+      <VolunteerModal
+        isOpen={isVolunteerModalOpen}
+        onClose={() => setIsVolunteerModalOpen(false)}
       />
     </>
   );
