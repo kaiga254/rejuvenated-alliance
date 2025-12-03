@@ -9,6 +9,11 @@ export interface ServiceCardProps {
   title: string;
   description: string;
   icon: ReactNode;
+  image?: string;
+  detailedDescription?: string;
+  benefits?: string[];
+  features?: string[];
+  slideImages?: string[];
 }
 
 export interface StatData {
