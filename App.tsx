@@ -1,11 +1,11 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import AboutMission from './components/AboutMission';
-import Services from './components/Services';
-import ImpactChart from './components/ImpactChart';
-import Footer from './components/Footer';
-import AiAssistant from './components/AiAssistant';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import AboutMission from "./components/AboutMission";
+import Services from "./components/Services";
+import ImpactChart from "./components/ImpactChart";
+import Footer from "./components/Footer";
+import AiAssistant from "./components/AiAssistant";
 
 const App: React.FC = () => {
   return (
@@ -18,7 +18,7 @@ const App: React.FC = () => {
         <ImpactChart />
       </main>
       <Footer />
-      <AiAssistant />
+      {/* <AiAssistant /> */}
     </div>
   );
 };
