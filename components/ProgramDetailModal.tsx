@@ -25,27 +25,27 @@ const ProgramDetailModal: React.FC<ProgramDetailModalProps> = ({
       onClick={onClose}
     >
       <div
-        className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl my-8 overflow-hidden relative animate-scale-up"
+        className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl my-8 overflow-hidden relative animate-scale-up max-h-[90vh] flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Close Button - Fixed position outside the scrollable area */}
+        {/* Close Button - More visible with contrasting colors */}
         <button
           onClick={onClose}
-          className="sticky top-2 right-2 z-20 ml-auto mr-2 mt-2 p-3 rounded-full bg-slate-900/80 hover:bg-slate-900 shadow-xl transition-all text-white hover:scale-110"
+          className="absolute top-4 right-4 z-30 p-3 rounded-full bg-white hover:bg-slate-100 shadow-2xl transition-all border-2 border-slate-200 hover:border-slate-300 hover:scale-110 group"
           aria-label="Close modal"
         >
-          <X className="h-6 w-6" />
+          <X className="h-6 w-6 text-slate-700 group-hover:text-slate-900" />
         </button>
 
-        {/* Image Carousel - Full width, no height constraint */}
+        {/* Image Carousel - Takes up at least 25% of modal height */}
         {slideImages.length > 0 && (
-          <div className="w-full">
+          <div className="w-full min-h-[300px] max-h-[35vh] flex-shrink-0 overflow-hidden">
             <ImageCarousel images={slideImages} alt={program.title} />
           </div>
         )}
 
-        {/* Content */}
-        <div className="p-8 md:p-10">
+        {/* Content - Scrollable area */}
+        <div className="p-8 md:p-10 overflow-y-auto flex-1 bg-white relative z-10">
           {/* Header */}
           <div className="flex items-start gap-4 mb-6">
             <div className="p-3 bg-slate-50 rounded-full flex-shrink-0">
