@@ -11,14 +11,6 @@ import {
 } from "recharts";
 import { StatData } from "../types";
 
-const data: StatData[] = [
-  { year: "2020", members: 1200, events: 45 },
-  { year: "2021", members: 1800, events: 80 },
-  { year: "2022", members: 2500, events: 120 },
-  { year: "2023", members: 3800, events: 190 },
-  { year: "2024", members: 5200, events: 310 },
-];
-
 const ImpactChart: React.FC = () => {
   return (
     <section id="impact" className="py-20 bg-white">
