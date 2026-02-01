@@ -42,6 +42,12 @@ const DonationModal: React.FC<DonationModalProps> = ({ isOpen, onClose }) => {
             </div>
             <div className="space-y-2 text-sm text-slate-600 pl-11">
               <div className="flex justify-between">
+                <span>Phone Number:</span>
+                <span className="font-mono font-bold text-slate-900">
+                  +254 724 217330
+                </span>
+              </div>
+              <div className="flex justify-between">
                 <span>Paybill Number:</span>
                 <span className="font-mono font-bold text-slate-900">
                   123456

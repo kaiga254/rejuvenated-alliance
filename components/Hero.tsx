@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import VolunteerModal from "./VolunteerModal";
+import DonationModal from "./DonationModal";
 
 const Hero: React.FC = () => {
   const [isVolunteerModalOpen, setIsVolunteerModalOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isDonationModalOpen, setIsDonationModalOpen] = useState(false);
 
   return (
     <>
@@ -14,7 +17,8 @@ const Hero: React.FC = () => {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://picsum.photos/id/128/1920/1080"
+            //src="https://picsum.photos/id/128/1920/1080"
+            src="/images/slides/hero.jpg"
             alt="Seniors enjoying community"
             className="w-full h-full object-cover"
           />
@@ -34,9 +38,11 @@ const Hero: React.FC = () => {
               golden years.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="flex items-center justify-center bg-white text-primary-900 px-8 py-3 rounded-full font-bold text-lg hover:bg-slate-100 transition-colors">
-                Our Programs
-                <ArrowRight className="ml-2 h-5 w-5" />
+              <button
+                onClick={() => setIsDonationModalOpen(true)}
+                className="bg-secondary-500 hover:bg-amber-600 text-white px-6 py-2 rounded-full font-bold transition-all shadow-lg transform hover:-translate-y-0.5"
+              >
+                Donate Now
               </button>
               <button
                 onClick={() => setIsVolunteerModalOpen(true)}
@@ -48,6 +54,11 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <DonationModal
+        isOpen={isDonationModalOpen}
+        onClose={() => setIsDonationModalOpen(false)}
+      />
 
       <VolunteerModal
         isOpen={isVolunteerModalOpen}

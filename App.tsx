@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import ImpactChart from "./components/ImpactChart";
 import Footer from "./components/Footer";
 import AiAssistant from "./components/AiAssistant";
+import { ImpactStats } from "./components/ImpactStats";
 
 const App: React.FC = () => {
   return (
@@ -15,7 +16,8 @@ const App: React.FC = () => {
         <Hero />
         <AboutMission />
         <Services />
-        <ImpactChart />
+        {/* <ImpactChart /> */}
+        <ImpactStats />
       </main>
       <Footer />
       {/* <AiAssistant /> */}
