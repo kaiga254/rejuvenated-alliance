@@ -62,6 +62,59 @@ const AboutMission: React.FC = () => {
             </div>
           </div>
         </div>
+
+        {/* Vision Section */}
+        <div className="mt-24 mb-20">
+          <div className="text-center max-w-3xl mx-auto">
+            <div className="inline-block bg-secondary-100 text-secondary-800 px-4 py-1.5 rounded-full text-sm font-semibold mb-6 tracking-wide">
+              Our Vision
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mb-6 leading-tight">
+              A World Where Every Senior is Valued
+            </h2>
+            <p className="text-xl text-slate-600 leading-relaxed">
+              "To create a world where every senior is valued, respected, and
+              empowered to live a fulfilling life, free from isolation and
+              neglect."
+            </p>
+          </div>
+        </div>
+
+        {/* Core Values Section */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {[
+            {
+              title: "Compassion",
+              desc: "Acting with empathy, kindness, and understanding in every interaction.",
+              color: "bg-primary-50",
+              textColor: "text-primary-800",
+            },
+            {
+              title: "Dignity",
+              desc: "Respecting the inherent worth and wisdom of every individual we serve.",
+              color: "bg-secondary-50",
+              textColor: "text-secondary-800",
+            },
+            {
+              title: "Community",
+              desc: "Fostering deep connections and a sense of belonging for all seniors.",
+              color: "bg-slate-50",
+              textColor: "text-slate-800",
+            },
+          ].map((value, idx) => (
+            <div
+              key={idx}
+              className={`${value.color} p-8 rounded-2xl border border-white/50 shadow-sm hover:shadow-md transition-shadow`}
+            >
+              <h3
+                className={`text-xl font-bold ${value.textColor} mb-4 font-serif`}
+              >
+                {value.title}
+              </h3>
+              <p className="text-slate-600 leading-relaxed">{value.desc}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
