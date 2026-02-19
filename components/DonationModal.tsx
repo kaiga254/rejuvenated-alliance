@@ -50,13 +50,13 @@ const DonationModal: React.FC<DonationModalProps> = ({ isOpen, onClose }) => {
               <div className="flex justify-between">
                 <span>Paybill Number:</span>
                 <span className="font-mono font-bold text-slate-900">
-                  123456
+                  ------
                 </span>
               </div>
               <div className="flex justify-between">
                 <span>Account Number:</span>
                 <span className="font-mono font-bold text-slate-900">
-                  RSA-DONATE
+                  ------
                 </span>
               </div>
             </div>
@@ -73,18 +73,20 @@ const DonationModal: React.FC<DonationModalProps> = ({ isOpen, onClose }) => {
             <div className="space-y-2 text-sm text-slate-600 pl-11">
               <div className="flex justify-between">
                 <span>Bank Name:</span>
-                <span className="font-bold text-slate-900">Equity Bank</span>
+                <span className="font-bold text-slate-900">
+                  Diamond Trust Bank
+                </span>
               </div>
               <div className="flex justify-between">
                 <span>Account Name:</span>
                 <span className="font-bold text-slate-900">
-                  Rejuvenated Seniors
+                  Rejuvenated Seniors Alliance International
                 </span>
               </div>
               <div className="flex justify-between">
                 <span>Account Number:</span>
                 <span className="font-mono font-bold text-slate-900">
-                  0123456789012
+                  0083598001
                 </span>
               </div>
             </div>

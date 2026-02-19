@@ -150,7 +150,7 @@ const Footer: React.FC = () => {
                 <li className="flex items-start">
                   <MapPin className="h-5 w-5 text-secondary-500 mr-3 mt-0.5 flex-shrink-0" />
                   <span>
-                    Kakamega,Webiye Road
+                    Kakamega,Webuye Road
                     <br />
                     Kenya
                   </span>

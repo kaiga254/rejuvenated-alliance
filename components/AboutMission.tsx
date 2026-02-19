@@ -47,13 +47,13 @@ const AboutMission: React.FC = () => {
 
               <div className="grid grid-cols-2 gap-8 border-t border-slate-100 pt-8">
                 <div className="border-l-4 border-primary-500 pl-6">
-                  <p className="text-3xl font-bold text-slate-900 mb-1">35+</p>
+                  <p className="text-3xl font-bold text-slate-900 mb-1">7+</p>
                   <p className="text-sm font-medium text-slate-500 uppercase tracking-wider">
                     Years of Service
                   </p>
                 </div>
                 <div className="border-l-4 border-secondary-500 pl-6">
-                  <p className="text-3xl font-bold text-slate-900 mb-1">150+</p>
+                  <p className="text-3xl font-bold text-slate-900 mb-1">10+</p>
                   <p className="text-sm font-medium text-slate-500 uppercase tracking-wider">
                     Dedicated Volunteers
                   </p>
