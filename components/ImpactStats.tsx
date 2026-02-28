@@ -63,8 +63,8 @@ const CountUp = ({
 
 export const ImpactStats = () => {
   const stats = [
-    { value: 700, suffix: "+", label: "widows and widowers supported" },
-    { value: 400, suffix: "+", label: "Projects Implemented" },
+    { value: 300, suffix: "+", label: "widows and widowers supported" },
+    { value: 100, suffix: "+", label: "Projects Implemented" },
     { value: 80, suffix: "%", label: "Members Satisfaction Rate" },
     { value: 5, suffix: "+", label: "Partnerships" },
   ];

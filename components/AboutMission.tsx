@@ -34,11 +34,11 @@ const AboutMission: React.FC = () => {
                 <span className="text-primary-800">Inspiring Hope.</span>
               </h2>
               <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                At Rejuvenated Seniors Alliance, we believe that aging is not a
-                decline, but a new chapter filled with potential. Our mission is
-                to advocate for the rights of seniors, provide essential
-                resources that foster independence, and create vibrant spaces
-                for social engagement.
+                At Rejuvenated Seniors Alliance, we aim to provide and restore
+                well-established care for forgotten and vulnerable widows and
+                widowers, improving their emotional and physical well-being,
+                empowering them to lead active lives, and thus ensuring powerful
+                and happy communities of seniors living with dignity.
               </p>
               <p className="text-lg text-slate-600 mb-10 leading-relaxed">
                 We bridge the gap between generations and ensure that no senior
@@ -64,40 +64,57 @@ const AboutMission: React.FC = () => {
         </div>
 
         {/* Vision Section */}
-        <div className="mt-24 mb-20">
-          <div className="text-center max-w-3xl mx-auto">
-            <div className="inline-block bg-secondary-100 text-secondary-800 px-4 py-1.5 rounded-full text-sm font-semibold mb-6 tracking-wide">
-              Our Vision
+        <div className="mt-20 mb-20">
+          <div className="bg-white p-8 lg:p-12 rounded-2xl shadow-sm border border-slate-100 max-w-5xl mx-auto">
+            <div className="max-w-3xl">
+              <div className="inline-block bg-secondary-100 text-secondary-800 px-4 py-1.5 rounded-full text-sm font-semibold mb-5 tracking-wide">
+                Vision Statement
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mb-4 leading-tight">
+                Empowering Seniors for Healthier, Dignified Living
+              </h2>
+              <p className="text-lg sm:text-xl text-slate-600 leading-relaxed">
+                We envision empowered grassroots elderly widows and widowers
+                living healthier lives, rebuilding hope, and contributing
+                meaningfully to their communities.
+              </p>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mb-6 leading-tight">
-              A World Where Every Senior is Valued
-            </h2>
-            <p className="text-xl text-slate-600 leading-relaxed">
-              "To create a world where every senior is valued, respected, and
-              empowered to live a fulfilling life, free from isolation and
-              neglect."
-            </p>
           </div>
         </div>
 
         {/* Core Values Section */}
+        <div className="text-center max-w-4xl mx-auto mb-10">
+          <div className="inline-block bg-primary-100 text-primary-800 px-4 py-1.5 rounded-full text-sm font-semibold mb-5 tracking-wide">
+            Core Values
+          </div>
+          <h3 className="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mb-4">
+            Guided by Integrity in Service
+          </h3>
+          <p className="text-lg text-slate-600 leading-relaxed">
+            Our core values are transparency, honesty, and faithfulness
+            (integrity). We look forward to building an inclusive world where
+            widows and widowers are supported to rebuild their lives, reach
+            their full potential, and contribute to their communities.
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {[
             {
-              title: "Compassion",
-              desc: "Acting with empathy, kindness, and understanding in every interaction.",
+              title: "Transparency",
+              desc: "We communicate openly, build trust through clarity, and remain accountable in all our actions.",
               color: "bg-primary-50",
               textColor: "text-primary-800",
             },
             {
-              title: "Dignity",
-              desc: "Respecting the inherent worth and wisdom of every individual we serve.",
+              title: "Honesty",
+              desc: "We uphold truthfulness in our relationships, decisions, and stewardship of support for seniors.",
               color: "bg-secondary-50",
               textColor: "text-secondary-800",
             },
             {
-              title: "Community",
-              desc: "Fostering deep connections and a sense of belonging for all seniors.",
+              title: "Faithfulness (Integrity)",
+              desc: "We stay committed to our mission with consistency, responsibility, and deep respect for every life we serve.",
               color: "bg-slate-50",
               textColor: "text-slate-800",
             },
