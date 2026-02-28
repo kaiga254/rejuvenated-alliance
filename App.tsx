@@ -3,9 +3,9 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import AboutMission from "./components/AboutMission";
 import Services from "./components/Services";
-import ImpactChart from "./components/ImpactChart";
 import Footer from "./components/Footer";
-import AiAssistant from "./components/AiAssistant";
+import { ImpactStats } from "./components/ImpactStats";
+import VoicesOfImpact from "./components/VoicesOfImpact";
 
 const App: React.FC = () => {
   return (
@@ -15,10 +15,10 @@ const App: React.FC = () => {
         <Hero />
         <AboutMission />
         <Services />
-        <ImpactChart />
+        <ImpactStats />
+        <VoicesOfImpact />
       </main>
       <Footer />
-      {/* <AiAssistant /> */}
     </div>
   );
 };

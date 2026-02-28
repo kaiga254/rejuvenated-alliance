@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { Activity, Users, BookOpen, Scale } from "lucide-react";
+import {
+  Activity,
+  Users,
+  BookOpen,
+  Scale,
+  Utensils,
+  TrendingUp,
+} from "lucide-react";
 import { ServiceCardProps } from "../types";
 import ProgramDetailModal from "./ProgramDetailModal";
 
@@ -9,11 +16,13 @@ const services: ServiceCardProps[] = [
     description:
       "Comprehensive programs focusing on physical mobility, nutrition workshops, and mental health support tailored for seniors.",
     icon: <Activity className="h-8 w-8 text-primary-500" />,
-    image: "/images/health-wellness.png",
-    slideImages: ["/images/health-wellness.png"],
-    detailedDescription: `Our Health & Wellness program is designed to promote physical, mental, and emotional well-being for seniors. We understand that maintaining good health is crucial for living independently and enjoying life to the fullest.
+    image: "/images/health-wellness1.jpg",
+    slideImages: ["/images/health-wellness1.jpg"],
+    detailedDescription: `The Rejuvenated Seniors Alliance (RSA) prioritizes the health of seniors by providing access to holistic health education and resources. Through workshops and community outreach, RSA advocates for regular health screenings, nutritional awareness, and physical activity, empowering elderly individuals to take charge of their well-being and improved their quality of life.  
+    
+    Focusing on disease prevention, RSA implements educational campaigns to raise awareness about common health risks among seniors. By promoting preventive measures such as vaccinations, regular check-ups, and healthy lifestyle choices, the organization aims to reduce the prevalence of chronic diseases and enhance the overall health of its members.
 
-Through a combination of gentle exercise classes, nutrition education, and mental health support, we help seniors stay active, eat well, and maintain a positive outlook on life. Our experienced instructors and healthcare professionals work closely with each participant to create personalized wellness plans that meet their individual needs and abilities.`,
+    Recognizing the emotional and mental challenges faced by seniors, RSA offers psychosocial care programs that foster connection and support. These initiatives include group discussions, counseling services, and social activities designed to alleviate loneliness and enhance emotional resilience, helping widows and widowers reclaim their sense of purpose and community.`,
     benefits: [
       "Improved physical mobility and strength through gentle exercise",
       "Better nutrition and dietary habits with expert guidance",
@@ -32,57 +41,103 @@ Through a combination of gentle exercise classes, nutrition education, and menta
     ],
   },
   {
-    title: "Social Connection",
+    title: "Women Leadership",
     description:
-      "Regular community gatherings, tea socials, and hobby clubs to combat isolation and foster lasting friendships.",
+      "Empowering widows and women with leadership skills, mentorship, and advocacy training to drive community development.",
     icon: <Users className="h-8 w-8 text-secondary-500" />,
-    image: "/images/social-connection.png",
-    slideImages: ["/images/social-connection.png"],
-    detailedDescription: `Social isolation is one of the biggest challenges facing seniors today. Our Social Connection program creates warm, welcoming spaces where seniors can build meaningful relationships, share experiences, and enjoy life together.
-
-From weekly tea socials to hobby clubs and special events, we offer numerous opportunities for seniors to connect with others who share similar interests and backgrounds. Our community gatherings are designed to be inclusive, engaging, and fun, fostering a sense of belonging and purpose.`,
+    image: "/images/leadership.jpg",
+    slideImages: ["/images/leadership.jpg"],
+    detailedDescription: `RSA champions women leadership by creating platforms for widows to engage in decision-making and community development. Through training programs and mentorship, the organization empowers women to harness their skills and voices, promoting gender equality and encouraging them to take on leadership roles within their households and communities.`,
     benefits: [
-      "Combat loneliness and social isolation",
-      "Build lasting friendships with peers",
-      "Engage in meaningful conversations and activities",
-      "Develop new interests and hobbies",
-      "Feel valued and part of a supportive community",
-      "Improve overall quality of life and happiness",
+      "Enhanced leadership and decision-making skills",
+      "Increased confidence in public speaking and advocacy",
+      "Access to a supportive network of women leaders",
+      "Opportunities to mentor younger generations",
+      "Greater involvement in community development projects",
+      "Understanding of women's rights and civic engagement",
     ],
     features: [
-      "Weekly tea and coffee socials",
-      "Book clubs and reading groups",
-      "Arts and crafts workshops",
-      "Music and sing-along sessions",
-      "Game nights and card tournaments",
-      "Special holiday celebrations and events",
+      "Leadership training workshops and seminars",
+      "One-on-one mentorship programs",
+      "Public speaking and advocacy coaching",
+      "Community project planning and execution",
+      "Rights awareness campaigns",
+      "Networking events with local leaders",
     ],
   },
   {
-    title: "Digital Literacy",
+    title: "Discovery Bible Study",
     description:
-      "Patient, hands-on training for smartphones, tablets, and internet safety to keep you connected with loved ones.",
+      "Faith-based gatherings fostering spiritual growth, community bonding, and mutual support.",
     icon: <BookOpen className="h-8 w-8 text-teal-500" />,
-    image: "/images/digital-literacy.png",
-    slideImages: ["/images/digital-literacy.png"],
-    detailedDescription: `In today's digital world, staying connected with family and friends often requires technology skills. Our Digital Literacy program provides patient, one-on-one instruction to help seniors confidently use smartphones, tablets, computers, and the internet.
-
-We understand that technology can be intimidating, which is why our instructors take a gentle, step-by-step approach. Whether you want to video call your grandchildren, shop online, or simply browse the web safely, we'll help you build the skills you need at your own pace.`,
+    image: "/images/bible-study.jpg",
+    slideImages: ["/images/bible-study.jpg"],
+    detailedDescription: `The Discovery Bible Study program offered by RSA encourages spiritual growth and community bonding among seniors. By engaging participants in discussions around biblical teachings, the program fosters a supportive environment where individuals can explore their faith, share experiences, and find comfort and strength in their spiritual journeys.`,
     benefits: [
-      "Stay connected with family and friends through video calls",
-      "Access important information and services online",
-      "Enjoy entertainment like streaming movies and music",
-      "Shop safely online for groceries and other needs",
-      "Protect yourself from online scams and fraud",
-      "Build confidence in using modern technology",
+      "Deepened spiritual connection and faith",
+      "Emotional support through shared beliefs",
+      "Reduction in feelings of isolation and loneliness",
+      "Meaningful discussions on life and purpose",
+      "Community bonding through prayer and reflection",
+      "A safe space for sharing personal stories",
     ],
     features: [
-      "One-on-one smartphone and tablet training",
-      "Email and messaging basics",
-      "Video calling with family (Zoom, WhatsApp, etc.)",
-      "Safe online shopping and banking",
-      "Social media basics (Facebook, etc.)",
-      "Internet safety and scam prevention",
+      "Weekly small group Bible studies",
+      "Prayer circles and spiritual support",
+      "Community fellowship meals",
+      "Guided reflections and discussions",
+      "Guest speakers and spiritual retreats",
+      "Interdenominational inclusivity",
+    ],
+  },
+  {
+    title: "Food Program",
+    description:
+      "Nutritional support and community meals ensuring no senior goes hungry.",
+    icon: <Utensils className="h-8 w-8 text-orange-500" />,
+    image: "/images/food-program.jpg",
+    slideImages: ["/images/food-program.jpg"],
+    detailedDescription: `RSA combats food insecurity among seniors by providing consistent access to nutritious meals and food supplies. Our program goes beyond just feeding; it educates seniors on healthy eating habits and creates social opportunities through community dining, ensuring both physical sustenance and social connection.`,
+    benefits: [
+      "Guaranteed access to nutritious food",
+      "Improved physical health through better diet",
+      "Reduction in food insecurity and hunger",
+      "Social interaction during community meals",
+      "Education on healthy eating on a budget",
+      "Emergency food assistance when needed",
+    ],
+    features: [
+      "Weekly food pantry distribution",
+      "Community lunch programs",
+      "Nutritional workshops and cooking demos",
+      "Home-delivered meals for homebound seniors",
+      "Gardening projects for fresh produce",
+      "Emergency food vouchers",
+    ],
+  },
+  {
+    title: "Economic Empowerment",
+    description:
+      "Skill development and financial literacy programs to foster independence and income generation.",
+    icon: <TrendingUp className="h-8 w-8 text-green-500" />,
+    image: "/images/economic-empowerment.jpg",
+    slideImages: ["/images/economic-empowerment.jpg"],
+    detailedDescription: `RSA promotes economic empowerment for widows and widowers through skill development and entrepreneurship training. By equipping seniors with practical skills and business knowledge, the organization enables them to generate income, achieve financial independence, and contribute to their households and communities, ultimately enhancing their dignity and self-reliance.`,
+    benefits: [
+      "Financial independence and stability",
+      "New income generation opportunities",
+      "Acquisition of practical vocational skills",
+      "Confidence in managing personal finances",
+      "Access to markets for handmade products",
+      "Self-reliance and dignity",
+    ],
+    features: [
+      " vocational skills training (crafts, farming, etc.)",
+      "Financial literacy and budgeting workshops",
+      "Small business mentorship and coaching",
+      "Savings groups (table banking)",
+      "Market access support for products",
+      "Grant application assistance",
     ],
   },
   {
@@ -90,8 +145,8 @@ We understand that technology can be intimidating, which is why our instructors 
     description:
       "Expert guidance on healthcare directives, housing rights, and estate planning to ensure your voice is always heard.",
     icon: <Scale className="h-8 w-8 text-indigo-500" />,
-    image: "/images/legal-advocacy.png",
-    slideImages: ["/images/legal-advocacy.png"],
+    image: "/images/legal-advocacy.jpg",
+    slideImages: ["/images/legal-advocacy.jpg"],
     detailedDescription: `Navigating legal matters can be overwhelming, especially for seniors. Our Legal Advocacy program connects you with experienced legal professionals who specialize in elder law, providing guidance on important issues like healthcare directives, housing rights, and estate planning.
 
 We believe that every senior deserves to have their rights protected and their wishes respected. Our advocates work tirelessly to ensure you understand your options and can make informed decisions about your future. We also provide support in dealing with age discrimination, elder abuse, and other legal challenges.`,
@@ -167,7 +222,7 @@ const Services: React.FC = () => {
               programs.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((s, idx) => (
               <ServiceCard
                 key={idx}

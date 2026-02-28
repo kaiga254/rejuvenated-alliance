@@ -15,6 +15,8 @@ const DonationModal: React.FC<DonationModalProps> = ({ isOpen, onClose }) => {
         {/* Close Button */}
         <button
           onClick={onClose}
+          aria-label="Close donation modal"
+          title="Close"
           className="absolute top-4 right-4 p-2 rounded-full hover:bg-slate-100 transition-colors text-slate-500 hover:text-slate-800"
         >
           <X className="h-5 w-5" />
@@ -42,15 +44,21 @@ const DonationModal: React.FC<DonationModalProps> = ({ isOpen, onClose }) => {
             </div>
             <div className="space-y-2 text-sm text-slate-600 pl-11">
               <div className="flex justify-between">
+                <span>Phone Number:</span>
+                <span className="font-mono font-bold text-slate-900">
+                  +254 724 217330
+                </span>
+              </div>
+              <div className="flex justify-between">
                 <span>Paybill Number:</span>
                 <span className="font-mono font-bold text-slate-900">
-                  123456
+                  ------
                 </span>
               </div>
               <div className="flex justify-between">
                 <span>Account Number:</span>
                 <span className="font-mono font-bold text-slate-900">
-                  RSA-DONATE
+                  ------
                 </span>
               </div>
             </div>
@@ -65,20 +73,22 @@ const DonationModal: React.FC<DonationModalProps> = ({ isOpen, onClose }) => {
               <h4 className="font-bold text-slate-800">Bank Transfer</h4>
             </div>
             <div className="space-y-2 text-sm text-slate-600 pl-11">
-              <div className="flex justify-between">
+              <div className="grid grid-cols-[110px_1fr] gap-3 items-start">
                 <span>Bank Name:</span>
-                <span className="font-bold text-slate-900">Equity Bank</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Account Name:</span>
-                <span className="font-bold text-slate-900">
-                  Rejuvenated Seniors
+                <span className="font-bold text-slate-900 text-right">
+                  Diamond Trust Bank
                 </span>
               </div>
-              <div className="flex justify-between">
+              <div className="grid grid-cols-[110px_1fr] gap-3 items-start">
+                <span>Account Name:</span>
+                <span className="font-bold text-slate-900 text-right break-words leading-relaxed">
+                  Rejuvenated Seniors Alliance International
+                </span>
+              </div>
+              <div className="grid grid-cols-[110px_1fr] gap-3 items-start">
                 <span>Account Number:</span>
-                <span className="font-mono font-bold text-slate-900">
-                  0123456789012
+                <span className="font-mono font-bold text-slate-900 text-right">
+                  0083598001
                 </span>
               </div>
             </div>

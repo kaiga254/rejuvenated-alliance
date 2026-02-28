@@ -27,3 +27,12 @@ export interface ChatMessage {
   text: string;
   isError?: boolean;
 }
+
+export interface Voice {
+  id: string;
+  name: string;
+  role: string;
+  image: string;
+  quote: string;
+  story: string;
+}

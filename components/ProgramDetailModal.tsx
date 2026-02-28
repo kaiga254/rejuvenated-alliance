@@ -109,16 +109,6 @@ const ProgramDetailModal: React.FC<ProgramDetailModalProps> = ({
               </div>
             </div>
           )}
-
-          {/* CTA */}
-          <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-slate-200">
-            <button className="flex-1 bg-primary-900 text-white px-6 py-3 rounded-md font-bold hover:bg-primary-800 transition-colors shadow-md hover:shadow-lg">
-              Enroll Now
-            </button>
-            <button className="flex-1 border-2 border-primary-900 text-primary-900 px-6 py-3 rounded-md font-bold hover:bg-primary-50 transition-colors">
-              Contact Us
-            </button>
-          </div>
         </div>
       </div>
     </div>

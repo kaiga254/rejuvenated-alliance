@@ -22,17 +22,21 @@ const Navbar: React.FC = () => {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
-              <div className="bg-primary-900 p-2 rounded-lg mr-3">
-                <Heart className="h-6 w-6 text-white" />
+              <div className="mr-3">
+                <img
+                  src="/images/rsa-logo.jpeg"
+                  alt="Rejuvenated Seniors Alliance Logo"
+                  className="h-16 w-auto object-contain"
+                />
               </div>
-              <div>
+              {/* <div>
                 <h1 className="text-2xl font-serif font-bold text-primary-900 leading-none">
                   Rejuvenated Seniors
                 </h1>
                 <span className="text-xs uppercase tracking-widest text-slate-500">
                   Alliance
                 </span>
-              </div>
+              </div> */}
             </div>
 
             {/* Desktop Menu */}

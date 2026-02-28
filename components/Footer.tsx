@@ -39,18 +39,20 @@ const Footer: React.FC = () => {
             {/* Brand */}
             <div>
               <div className="flex items-center mb-4">
-                <Heart className="h-6 w-6 text-secondary-500 mr-2" />
+                <img src="/images/rsa-logo.png" alt="" />
+                {/* <Heart className="h-6 w-6 text-secondary-500 mr-2" />
                 <span className="text-2xl font-serif font-bold text-white">
                   Rejuvenated Seniors
-                </span>
+                </span> */}
               </div>
               <p className="text-sm leading-relaxed mb-6">
-                Dedicated to enriching the lives of seniors through advocacy,
-                community building, and comprehensive support services.
+                We design and implement programs targeting elderly widows and
+                widowers at the grassroots level in Kakamega, Kenya, through
+                holistic health education and support.
               </p>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://ke.linkedin.com/in/monica-amunga-5a24b52a1"
                   aria-label="LinkedIn"
                   className="text-slate-400 hover:text-secondary-500 transition-colors"
                 >
@@ -64,14 +66,14 @@ const Footer: React.FC = () => {
                   <Youtube className="h-5 w-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/RejuvenatedSeniors/"
                   aria-label="Facebook"
                   className="text-slate-400 hover:text-secondary-500 transition-colors"
                 >
                   <Facebook className="h-5 w-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.tiktok.com/@rsa_kenya"
                   aria-label="TikTok"
                   className="text-slate-400 hover:text-secondary-500 transition-colors"
                 >
@@ -148,7 +150,7 @@ const Footer: React.FC = () => {
                 <li className="flex items-start">
                   <MapPin className="h-5 w-5 text-secondary-500 mr-3 mt-0.5 flex-shrink-0" />
                   <span>
-                    Kakamega,Webiye Road
+                    Kakamega,Webuye Road
                     <br />
                     Kenya
                   </span>
@@ -159,7 +161,7 @@ const Footer: React.FC = () => {
                 </li>
                 <li className="flex items-center">
                   <Mail className="h-5 w-5 text-secondary-500 mr-3 flex-shrink-0" />
-                  <span>info@rejuvenatedseniorsalliance.org</span>
+                  <span>rejuvenatedseniorsalliance@gmail.com</span>
                 </li>
               </ul>
             </div>
