@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
           <div className="sm:w-2/3 lg:w-1/2">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight shadow-sm">
-              Empowering Lives, <br />
+              Empowering Lives <br />
               Enriching Communities.
             </h1>
             <p className="text-lg sm:text-xl text-primary-50 mb-8 font-light leading-relaxed">
