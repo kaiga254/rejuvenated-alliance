@@ -1,19 +1,21 @@
 import React, { useState } from "react";
-import { Menu, X, Heart } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { NavItem } from "../types";
 import DonationModal from "./DonationModal";
+import { Link, useLocation } from "react-router-dom";
 
 const navItems: NavItem[] = [
-  { label: "Home", href: "#home" },
-  { label: "About Us", href: "#mission" },
-  { label: "Programs", href: "#programs" },
-  { label: "Impact", href: "#impact" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
+  { label: "Programs", href: "/programs" },
+  { label: "Projects", href: "/projects" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDonationModalOpen, setIsDonationModalOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <>
@@ -22,34 +24,33 @@ const Navbar: React.FC = () => {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
-              <div className="mr-3">
+              <Link to="/" className="mr-3">
                 <img
                   src="/images/rsa-logo.jpeg"
                   alt="Rejuvenated Seniors Alliance Logo"
                   className="h-16 w-auto object-contain"
                 />
-              </div>
-              {/* <div>
-                <h1 className="text-2xl font-serif font-bold text-primary-900 leading-none">
-                  Rejuvenated Seniors
-                </h1>
-                <span className="text-xs uppercase tracking-widest text-slate-500">
-                  Alliance
-                </span>
-              </div> */}
+              </Link>
             </div>
 
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8 items-center">
-              {navItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="text-slate-600 hover:text-primary-800 font-medium transition-colors duration-200"
-                >
-                  {item.label}
-                </a>
-              ))}
+              {navItems.map((item) => {
+                const isActive = location.pathname === item.href;
+                return (
+                  <Link
+                    key={item.label}
+                    to={item.href}
+                    className={`font-medium transition-colors duration-200 ${
+                      isActive
+                        ? "text-primary-800 font-bold"
+                        : "text-slate-600 hover:text-primary-800"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
               <button
                 onClick={() => setIsDonationModalOpen(true)}
                 className="bg-secondary-500 hover:bg-amber-600 text-white px-6 py-2 rounded-full font-bold transition-all shadow-lg transform hover:-translate-y-0.5"
@@ -79,16 +80,23 @@ const Navbar: React.FC = () => {
         {isOpen && (
           <div className="md:hidden bg-slate-50 border-t border-slate-100 shadow-inner">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              {navItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-primary-900 hover:bg-slate-100"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.label}
-                </a>
-              ))}
+              {navItems.map((item) => {
+                const isActive = location.pathname === item.href;
+                return (
+                  <Link
+                    key={item.label}
+                    to={item.href}
+                    className={`block px-3 py-2 rounded-md text-base font-medium ${
+                      isActive
+                        ? "text-primary-900 bg-white shadow-sm font-bold"
+                        : "text-slate-700 hover:text-primary-900 hover:bg-white/50"
+                    }`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
               <button
                 onClick={() => {
                   setIsOpen(false);
