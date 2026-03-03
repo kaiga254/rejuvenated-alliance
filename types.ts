@@ -36,3 +36,15 @@ export interface Voice {
   quote: string;
   story: string;
 }
+
+export interface Project {
+  id: string;
+  title: string;
+  shortDescription: string;
+  fullDescription: string;
+  image: string;
+  status: 'Completed' | 'Ongoing' | 'Upcoming';
+  statusColor: string;
+  date: string;
+  location?: string;
+}

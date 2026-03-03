@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import AboutMission from "../components/AboutMission";
 import Services from "../components/Services";
 import { ImpactStats } from "../components/ImpactStats";
+import FeaturedProjects from "../components/FeaturedProjects";
 import VoicesOfImpact from "../components/VoicesOfImpact";
 
 const Home: React.FC = () => {
@@ -12,6 +13,7 @@ const Home: React.FC = () => {
       <AboutMission />
       <Services />
       <ImpactStats />
+      <FeaturedProjects />
       <VoicesOfImpact />
     </div>
   );

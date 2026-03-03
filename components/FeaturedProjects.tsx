@@ -1,43 +1,23 @@
 import React, { useState } from "react";
-import ProjectDetailModal from "../components/ProjectDetailModal";
+import { Link } from "react-router-dom";
 import { featuredProjectsData } from "../data/projects";
+import ProjectDetailModal from "./ProjectDetailModal";
 import { Project } from "../types";
 
-const Projects: React.FC = () => {
+const FeaturedProjects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
-    <div className="flex-grow bg-slate-50">
-      <section className="relative h-[400px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="https://images.unsplash.com/photo-1576766125468-a5d48274c5b4?auto=format&fit=crop&w=1920&q=80"
-            alt="Seniors participating in activities"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-primary-900/70" />
-        </div>
-        <div className="relative z-10 text-center px-4">
-          <h1 className="text-5xl md:text-6xl font-serif font-bold text-white mb-6">
-            Our Projects
-          </h1>
-          <p className="text-xl text-primary-100 max-w-2xl mx-auto leading-relaxed">
-            Discover the specific initiatives and projects we've undertaken to
-            create tangible impact in the lives of seniors across our
-            communities
-          </p>
-        </div>
-      </section>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+    <div className="bg-white py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-serif font-bold text-primary-900 mb-4">
-            Featured Initiatives
+            Recent Projects
           </h2>
           <div className="w-24 h-1 bg-secondary-500 mx-auto rounded-full mb-6"></div>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto border-t border-transparent">
-            Explore some of our most impactful community efforts aimed at
-            enhancing the lives of seniors.
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto border-t border-transparent mb-8">
+            Take a look at some of the recent initiatives we've been working on
+            to support our seniors.
           </p>
         </div>
 
@@ -76,24 +56,8 @@ const Projects: React.FC = () => {
                   {project.shortDescription}
                 </p>
                 <div className="mt-auto pt-4 border-t border-slate-100 flex justify-between items-center">
-                  <div className="text-sm font-semibold text-slate-500 flex items-center">
-                    <svg
-                      className="w-4 h-4 mr-2"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                      />
-                    </svg>
-                    {project.date}
-                  </div>
                   <span className="text-secondary-600 font-bold group-hover:text-secondary-700 flex items-center transition-colors">
-                    Details
+                    Show More
                     <svg
                       className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform"
                       fill="none"
@@ -113,6 +77,15 @@ const Projects: React.FC = () => {
             </div>
           ))}
         </div>
+
+        <div className="text-center mt-12">
+          <Link
+            to="/projects"
+            className="inline-block bg-primary-900 hover:bg-primary-800 text-white font-bold py-3 px-8 rounded-full transition-colors shadow-md hover:shadow-lg"
+          >
+            View All Projects
+          </Link>
+        </div>
       </div>
 
       <ProjectDetailModal
@@ -124,4 +97,4 @@ const Projects: React.FC = () => {
   );
 };
 
-export default Projects;
+export default FeaturedProjects;

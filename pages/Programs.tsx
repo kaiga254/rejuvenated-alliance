@@ -3,20 +3,33 @@ import Services from "../components/Services";
 
 const Programs: React.FC = () => {
   return (
-    <div className="flex-grow bg-white py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-        <h1 className="text-4xl font-serif font-bold text-primary-900 mb-4 text-center">
-          Our Programs & Services
-        </h1>
-        <p className="text-lg text-slate-600 text-center max-w-3xl mx-auto">
-          Explore the various programs and services we offer to support, engage,
-          and uplift the seniors in our community. We are committed to providing
-          comprehensive care and engaging activities.
-        </p>
-      </div>
+    <div className="flex-grow bg-slate-50">
+      {/* Hero Section */}
+      <section className="relative h-[400px] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1576766125468-a5d48274c5b4?auto=format&fit=crop&w=1920&q=80"
+            alt="Seniors participating in activities"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-primary-900/70" />
+        </div>
+        <div className="relative z-10 text-center px-4">
+          <h1 className="text-5xl md:text-6xl font-serif font-bold text-white mb-6">
+            Our Programs & Services
+          </h1>
+          <p className="text-xl text-primary-100 max-w-2xl mx-auto leading-relaxed">
+            Explore the various programs and services we offer to support,
+            engage, and uplift the seniors in our community. We are committed to
+            providing comprehensive care and engaging activities.
+          </p>
+        </div>
+      </section>
 
-      {/* We reuse the rich Services component here */}
-      <Services />
+      <div className="py-20">
+        {/* We reuse the rich Services component here */}
+        <Services />
+      </div>
     </div>
   );
 };
