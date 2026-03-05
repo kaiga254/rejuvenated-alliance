@@ -32,7 +32,7 @@ During the counseling session, John testified that he never bothered to have a f
     id: "3",
     name: "Bible Study Group",
     role: "Program Participants",
-    image: "/images/PHOTO-2025-12-10-15-01-26.jpg",
+    image: "/images/bible-study.jpg",
     quote:
       "I have experienced much with RSA Bible study, today I can read the Bible and know God. In our church, we were not allowed to read but to listen.",
     story: `Statistically, at least 80% of the beneficiaries have developed a lot of interests in scriptural reading and searching through the verses that has seen them discuss more about the word and develop an urge to reach out to other locals in the communities to share the word. It has of much value to see a true transformation of the locals and more so those neglected and discriminated against due to age, vulnerability and poverty. Due to demand of very many things of the needy locals, hope was lost and low self-esteem developed with much lack of worthiness in life. Discovery Bible Study program has elevated the people’s understanding and the beneficiaries have started developing a culture of sharing the word through their words, deeds and actions. Some of them have got feelings and testimonies in regards to where they were and the current life.

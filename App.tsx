@@ -1,25 +1,30 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import AboutMission from "./components/AboutMission";
-import Services from "./components/Services";
 import Footer from "./components/Footer";
-import { ImpactStats } from "./components/ImpactStats";
-import VoicesOfImpact from "./components/VoicesOfImpact";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Programs from "./pages/Programs";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
-      <main className="flex-grow">
-        <Hero />
-        <AboutMission />
-        <Services />
-        <ImpactStats />
-        <VoicesOfImpact />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
+        <main className="flex-grow flex flex-col">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/programs" element={<Programs />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 };
 

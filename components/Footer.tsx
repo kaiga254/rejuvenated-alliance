@@ -11,22 +11,6 @@ import {
 import DonationModal from "./DonationModal";
 import VolunteerModal from "./VolunteerModal";
 
-// Custom TikTok icon since it might not be in all versions of lucide-react or to ensure specific styling if needed.
-// However, assuming recent lucide-react has it or we use a text fallback/generic if missing.
-// Checking lucide-react 0.554.0, it should have it. Let's try importing it.
-// If it fails, I will use a placeholder.
-// Actually, to be safe and avoid build errors if it's missing, I'll check if I can use a generic Icon or just try.
-// I'll try importing 'Twitter' as a test? No, let's just stick to the requested ones.
-// I will use a simple SVG for TikTok if I can't import it, but let's try importing `Video` as a fallback or just `Facebook`, `Linkedin`, `Youtube`.
-// Wait, I can't easily "try" without running code. I'll assume standard icons exist.
-// Facebook, Linkedin, Youtube are standard. TikTok is newer.
-// Let's check if I can see the `lucide-react` exports? No.
-// I'll use `Facebook`, `Linkedin`, `Youtube` and for TikTok I'll use a custom SVG or just text if I have to, but let's try to find a "Share2" or something if TikTok is missing.
-// Actually, I'll just use the text "TikTok" if I'm unsure, but I want icons.
-// Let's look at the existing imports: `Heart, Mail, MapPin, Phone`.
-// I will add `Linkedin, Youtube, Facebook`. For TikTok, I'll check if `Music2` or something fits, or just use a generic one.
-// Actually, I'll check if I can use a simple SVG for TikTok directly in the JSX to be safe.
-
 const Footer: React.FC = () => {
   const [isDonationModalOpen, setIsDonationModalOpen] = useState(false);
   const [isVolunteerModalOpen, setIsVolunteerModalOpen] = useState(false);
