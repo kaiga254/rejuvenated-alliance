@@ -11,7 +11,7 @@ const Projects: React.FC = () => {
       <section className="relative h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1576766125468-a5d48274c5b4?auto=format&fit=crop&w=1920&q=80"
+            src="/images/slides/hero4.jpg"
             alt="Seniors participating in activities"
             className="w-full h-full object-cover"
           />

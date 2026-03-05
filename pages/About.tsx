@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, MessageSquare, Phone } from "lucide-react";
+import { Mail, MessageSquare, MessageCircle } from "lucide-react";
 
 const About: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ const About: React.FC = () => {
       <section className="relative h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1920&q=80"
+            src="/images/slides/hero2.jpg"
             alt="Seniors enjoying time together"
             className="w-full h-full object-cover"
           />
@@ -51,7 +51,7 @@ const About: React.FC = () => {
             <div className="relative order-1 md:order-2">
               <div className="absolute inset-0 bg-primary-200 rounded-3xl transform translate-x-4 translate-y-4"></div>
               <img
-                src="https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?auto=format&fit=crop&w=800&q=80"
+                src="/images/founders/members.jpeg"
                 alt="Community gathering"
                 className="relative rounded-3xl shadow-xl w-full h-[450px] object-cover"
               />
@@ -62,11 +62,11 @@ const About: React.FC = () => {
         {/* Mission, Vision, Values */}
         <section className="mb-24 relative rounded-3xl overflow-hidden shadow-2xl">
           <div className="absolute inset-0 bg-primary-900">
-            <img
-              src="https://images.unsplash.com/photo-1413882353314-73389f63b6fd?auto=format&fit=crop&w=1920&q=80"
+            {/* <img
+              src="/images/slides/hero1.jpg"
               alt="Hands together"
               className="w-full h-full object-cover opacity-20 mix-blend-overlay"
-            />
+            /> */}
           </div>
           <div className="relative z-10 p-10 md:p-16 text-white grid md:grid-cols-3 gap-12">
             <div className="text-center md:text-left transition-transform hover:-translate-y-2 duration-300">
@@ -161,7 +161,7 @@ const About: React.FC = () => {
             <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden group">
               <div className="aspect-[4/5] bg-slate-200 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+                  src="/images/founders/lydia.jpeg"
                   alt="Founder"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   onError={(e) => {
@@ -173,18 +173,18 @@ const About: React.FC = () => {
               <div className="p-8 text-center bg-white relative">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-1 bg-secondary-500 rounded-full"></div>
                 <h3 className="text-2xl font-bold text-primary-900 mb-1">
-                  Jane Doe
+                  Lydia Kwamboka
                 </h3>
                 <p className="text-secondary-600 font-bold mb-4 uppercase tracking-wider text-sm">
-                  Co-Founder & President
+                  Co-Founder
                 </p>
                 <p className="text-slate-600 text-base leading-relaxed mb-6">
-                  Dedicated to improving senior care with over 20 years of
-                  experience in community building.
+                  A dedicated psychologist with a calling to offer counceling
+                  sessions to windows and widowers.
                 </p>
                 <div className="flex justify-center space-x-5 border-t border-slate-100 pt-6 mt-2">
                   <a
-                    href="mailto:jane@rejuvenatedalliance.org"
+                    href="mailto:lydia@rsainternational.org"
                     className="text-slate-400 hover:text-primary-600 transition-colors transform hover:scale-110"
                     title="Email"
                     target="_blank"
@@ -193,7 +193,7 @@ const About: React.FC = () => {
                     <Mail className="w-5 h-5" />
                   </a>
                   <a
-                    href="sms:+1234567890"
+                    href="sms:+254724217330"
                     className="text-slate-400 hover:text-primary-600 transition-colors transform hover:scale-110"
                     title="SMS text"
                     target="_blank"
@@ -202,13 +202,13 @@ const About: React.FC = () => {
                     <MessageSquare className="w-5 h-5" />
                   </a>
                   <a
-                    href="https://wa.me/1234567890"
+                    href="https://wa.me/+254724217330"
                     className="text-slate-400 hover:text-green-500 transition-colors transform hover:scale-110"
                     title="WhatsApp"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Phone className="w-5 h-5" />
+                    <MessageCircle className="w-5 h-5" />
                   </a>
                 </div>
               </div>
@@ -217,22 +217,21 @@ const About: React.FC = () => {
             <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden group">
               <div className="aspect-[4/5] bg-slate-200 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80"
+                  src="/images/founders/monica.jpeg"
                   alt="Founder"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   onError={(e) => {
-                    e.currentTarget.src =
-                      "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80";
+                    e.currentTarget.src = "";
                   }}
                 />
               </div>
               <div className="p-8 text-center bg-white relative">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-1 bg-secondary-500 rounded-full"></div>
                 <h3 className="text-2xl font-bold text-primary-900 mb-1">
-                  John Smith
+                  Monica Amunga
                 </h3>
                 <p className="text-secondary-600 font-bold mb-4 uppercase tracking-wider text-sm">
-                  Co-Founder & Operations
+                  Co-Founder
                 </p>
                 <p className="text-slate-600 text-base leading-relaxed mb-6">
                   Passionate about healthcare and accessible living for the
@@ -240,7 +239,7 @@ const About: React.FC = () => {
                 </p>
                 <div className="flex justify-center space-x-5 border-t border-slate-100 pt-6 mt-2">
                   <a
-                    href="mailto:john@rejuvenatedalliance.org"
+                    href="mailto:moamunga@rsainternational.org"
                     className="text-slate-400 hover:text-primary-600 transition-colors transform hover:scale-110"
                     title="Email"
                     target="_blank"
@@ -249,7 +248,7 @@ const About: React.FC = () => {
                     <Mail className="w-5 h-5" />
                   </a>
                   <a
-                    href="sms:+1234567890"
+                    href="sms:+254 724 217330"
                     className="text-slate-400 hover:text-primary-600 transition-colors transform hover:scale-110"
                     title="SMS text"
                     target="_blank"
@@ -258,13 +257,13 @@ const About: React.FC = () => {
                     <MessageSquare className="w-5 h-5" />
                   </a>
                   <a
-                    href="https://wa.me/1234567890"
+                    href="https://wa.me/+254724217330"
                     className="text-slate-400 hover:text-green-500 transition-colors transform hover:scale-110"
                     title="WhatsApp"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Phone className="w-5 h-5" />
+                    <MessageCircle className="w-5 h-5" />
                   </a>
                 </div>
               </div>
@@ -273,22 +272,21 @@ const About: React.FC = () => {
             <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden group">
               <div className="aspect-[4/5] bg-slate-200 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80"
+                  src=""
                   alt="Founder"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   onError={(e) => {
-                    e.currentTarget.src =
-                      "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80";
+                    e.currentTarget.src = "";
                   }}
                 />
               </div>
               <div className="p-8 text-center bg-white relative">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-1 bg-secondary-500 rounded-full"></div>
                 <h3 className="text-2xl font-bold text-primary-900 mb-1">
-                  Sarah Lee
+                  Belinda
                 </h3>
                 <p className="text-secondary-600 font-bold mb-4 uppercase tracking-wider text-sm">
-                  Co-Founder & Community Lead
+                  Community Lead
                 </p>
                 <p className="text-slate-600 text-base leading-relaxed mb-6">
                   Championing mental vitality and social connections for our
@@ -296,7 +294,7 @@ const About: React.FC = () => {
                 </p>
                 <div className="flex justify-center space-x-5 border-t border-slate-100 pt-6 mt-2">
                   <a
-                    href="mailto:sarah@rejuvenatedalliance.org"
+                    href="mailto:belindah@rsainternational.org"
                     className="text-slate-400 hover:text-primary-600 transition-colors transform hover:scale-110"
                     title="Email"
                     target="_blank"
@@ -305,7 +303,7 @@ const About: React.FC = () => {
                     <Mail className="w-5 h-5" />
                   </a>
                   <a
-                    href="sms:+1234567890"
+                    href="sms:++254710220655"
                     className="text-slate-400 hover:text-primary-600 transition-colors transform hover:scale-110"
                     title="SMS text"
                     target="_blank"
@@ -314,13 +312,13 @@ const About: React.FC = () => {
                     <MessageSquare className="w-5 h-5" />
                   </a>
                   <a
-                    href="https://wa.me/1234567890"
+                    href="https://wa.me/+254710220655"
                     className="text-slate-400 hover:text-green-500 transition-colors transform hover:scale-110"
                     title="WhatsApp"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Phone className="w-5 h-5" />
+                    <MessageCircle className="w-5 h-5" />
                   </a>
                 </div>
               </div>

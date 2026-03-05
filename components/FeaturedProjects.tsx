@@ -162,7 +162,9 @@ const FeaturedProjects: React.FC = () => {
                           : "text-orange-600 group-hover:text-orange-700"
                       }`}
                     >
-                      {derivedStatus === "Completed" ? "Show More" : "Donate"}
+                      {derivedStatus === "Completed"
+                        ? "Show More"
+                        : "Support Project"}
                       <svg
                         className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform"
                         fill="none"
