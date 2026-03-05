@@ -79,9 +79,9 @@ const Contact: React.FC = () => {
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Our Location</h3>
                   <p className="text-primary-100 leading-relaxed">
-                    123 Community Hub Way
+                    Webuye Road
                     <br />
-                    Nairobi, Kenya
+                    Kakamega, Kenya
                   </p>
                 </div>
               </div>
@@ -90,7 +90,7 @@ const Contact: React.FC = () => {
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Phone Number</h3>
                   <p className="text-primary-100 leading-relaxed">
-                    +254 700 000 000
+                    +254 724 217-330
                   </p>
                 </div>
               </div>
@@ -99,7 +99,7 @@ const Contact: React.FC = () => {
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Email Address</h3>
                   <p className="text-primary-100 leading-relaxed">
-                    hello@rejuvenatedalliance.org
+                    info@rsainternational.org
                   </p>
                 </div>
               </div>

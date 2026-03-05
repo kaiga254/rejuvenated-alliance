@@ -272,7 +272,7 @@ const About: React.FC = () => {
             <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden group">
               <div className="aspect-[4/5] bg-slate-200 overflow-hidden">
                 <img
-                  src=""
+                  src="/images/founders/belinda.png"
                   alt="Founder"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   onError={(e) => {
