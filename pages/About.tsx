@@ -149,7 +149,7 @@ const About: React.FC = () => {
         <section>
           <div className="text-center mb-16">
             <h2 className="text-4xl font-serif font-bold text-primary-900 mb-4">
-              Meet Our Founders
+              Meet Our
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
               The passionate individuals who brought Rejuvenated Alliance to
@@ -182,42 +182,13 @@ const About: React.FC = () => {
                   A dedicated psychologist with a calling to offer counceling
                   sessions to windows and widowers.
                 </p>
-                <div className="flex justify-center space-x-5 border-t border-slate-100 pt-6 mt-2">
-                  <a
-                    href="mailto:lydia@rsainternational.org"
-                    className="text-slate-400 hover:text-primary-600 transition-colors transform hover:scale-110"
-                    title="Email"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Mail className="w-5 h-5" />
-                  </a>
-                  <a
-                    href="sms:+254724217330"
-                    className="text-slate-400 hover:text-primary-600 transition-colors transform hover:scale-110"
-                    title="SMS text"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <MessageSquare className="w-5 h-5" />
-                  </a>
-                  <a
-                    href="https://wa.me/+254724217330"
-                    className="text-slate-400 hover:text-green-500 transition-colors transform hover:scale-110"
-                    title="WhatsApp"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <MessageCircle className="w-5 h-5" />
-                  </a>
-                </div>
               </div>
             </div>
             {/* Founder 2 */}
             <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden group">
               <div className="aspect-[4/5] bg-slate-200 overflow-hidden">
                 <img
-                  src="/images/founders/monica.jpeg"
+                  src="/images/founders/monica1.jpeg"
                   alt="Founder"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   onError={(e) => {
@@ -231,41 +202,12 @@ const About: React.FC = () => {
                   Monica Amunga
                 </h3>
                 <p className="text-secondary-600 font-bold mb-4 uppercase tracking-wider text-sm">
-                  Co-Founder
+                  Founder & CEO
                 </p>
                 <p className="text-slate-600 text-base leading-relaxed mb-6">
                   Passionate about healthcare and accessible living for the
                   aging population.
                 </p>
-                <div className="flex justify-center space-x-5 border-t border-slate-100 pt-6 mt-2">
-                  <a
-                    href="mailto:moamunga@rsainternational.org"
-                    className="text-slate-400 hover:text-primary-600 transition-colors transform hover:scale-110"
-                    title="Email"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Mail className="w-5 h-5" />
-                  </a>
-                  <a
-                    href="sms:+254 724 217330"
-                    className="text-slate-400 hover:text-primary-600 transition-colors transform hover:scale-110"
-                    title="SMS text"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <MessageSquare className="w-5 h-5" />
-                  </a>
-                  <a
-                    href="https://wa.me/+254724217330"
-                    className="text-slate-400 hover:text-green-500 transition-colors transform hover:scale-110"
-                    title="WhatsApp"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <MessageCircle className="w-5 h-5" />
-                  </a>
-                </div>
               </div>
             </div>
             {/* Founder 3 */}
@@ -286,41 +228,90 @@ const About: React.FC = () => {
                   Belinda
                 </h3>
                 <p className="text-secondary-600 font-bold mb-4 uppercase tracking-wider text-sm">
-                  Community Lead
+                  Secretary
                 </p>
                 <p className="text-slate-600 text-base leading-relaxed mb-6">
                   Championing mental vitality and social connections for our
                   beloved seniors.
                 </p>
-                <div className="flex justify-center space-x-5 border-t border-slate-100 pt-6 mt-2">
-                  <a
-                    href="mailto:belindah@rsainternational.org"
-                    className="text-slate-400 hover:text-primary-600 transition-colors transform hover:scale-110"
-                    title="Email"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Mail className="w-5 h-5" />
-                  </a>
-                  <a
-                    href="sms:++254710220655"
-                    className="text-slate-400 hover:text-primary-600 transition-colors transform hover:scale-110"
-                    title="SMS text"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <MessageSquare className="w-5 h-5" />
-                  </a>
-                  <a
-                    href="https://wa.me/+254710220655"
-                    className="text-slate-400 hover:text-green-500 transition-colors transform hover:scale-110"
-                    title="WhatsApp"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <MessageCircle className="w-5 h-5" />
-                  </a>
-                </div>
+              </div>
+            </div>
+            {/* Founder 4 */}
+            <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden group">
+              <div className="aspect-[4/5] bg-slate-200 overflow-hidden">
+                <img
+                  src="/images/founders/hosea.jpeg"
+                  alt="Trustee"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  onError={(e) => {
+                    e.currentTarget.src = "";
+                  }}
+                />
+              </div>
+              <div className="p-8 text-center bg-white relative">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-1 bg-secondary-500 rounded-full"></div>
+                <h3 className="text-2xl font-bold text-primary-900 mb-1">
+                  Hosea Agalo
+                </h3>
+                <p className="text-secondary-600 font-bold mb-4 uppercase tracking-wider text-sm">
+                  Trustee
+                </p>
+                <p className="text-slate-600 text-base leading-relaxed mb-6">
+                  Dedicated to ensuring our seniors have access to essential
+                  healthcare and support services.
+                </p>
+              </div>
+            </div>
+            {/* Founder 5 */}
+            <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden group">
+              <div className="aspect-[4/5] bg-slate-200 overflow-hidden">
+                <img
+                  src="/images/founders/penina.jpeg"
+                  alt="Founder"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  onError={(e) => {
+                    e.currentTarget.src = "";
+                  }}
+                />
+              </div>
+              <div className="p-8 text-center bg-white relative">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-1 bg-secondary-500 rounded-full"></div>
+                <h3 className="text-2xl font-bold text-primary-900 mb-1">
+                  Penina Naibei
+                </h3>
+                <p className="text-secondary-600 font-bold mb-4 uppercase tracking-wider text-sm">
+                  Board Member
+                </p>
+                <p className="text-slate-600 text-base leading-relaxed mb-6">
+                  Passionate with a heart for community development and deep
+                  care for the windows and widowers in our society.
+                </p>
+              </div>
+            </div>
+            {/* Founder 6 */}
+            <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden group">
+              <div className="aspect-[4/5] bg-slate-200 overflow-hidden">
+                <img
+                  src="/images/founders/eunice.jpeg"
+                  alt="Founder"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  onError={(e) => {
+                    e.currentTarget.src = "";
+                  }}
+                />
+              </div>
+              <div className="p-8 text-center bg-white relative">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-1 bg-secondary-500 rounded-full"></div>
+                <h3 className="text-2xl font-bold text-primary-900 mb-1">
+                  Eunice Akinyi
+                </h3>
+                <p className="text-secondary-600 font-bold mb-4 uppercase tracking-wider text-sm">
+                  Board Member
+                </p>
+                <p className="text-slate-600 text-base leading-relaxed mb-6">
+                  Passionate about creating a supportive environment for our the
+                  elderly.
+                </p>
               </div>
             </div>
           </div>
