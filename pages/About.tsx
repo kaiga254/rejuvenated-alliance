@@ -145,7 +145,7 @@ const About: React.FC = () => {
           </div>
         </section>
 
-        {/* Founders */}
+        {/* Founders 1 */}
         <section>
           <div className="text-center mb-16">
             <h2 className="text-4xl font-serif font-bold text-primary-900 mb-4">
@@ -157,7 +157,34 @@ const About: React.FC = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-10">
-            {/* Founder 1 */}
+            {/* Founder 2 */}
+            <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden group">
+              <div className="aspect-[4/5] bg-slate-200 overflow-hidden">
+                <img
+                  src="/images/founders/monica.png"
+                  alt="Founder"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  onError={(e) => {
+                    e.currentTarget.src = "";
+                  }}
+                />
+              </div>
+              <div className="p-8 text-center bg-white relative">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-1 bg-secondary-500 rounded-full"></div>
+                <h3 className="text-2xl font-bold text-primary-900 mb-1">
+                  Monica Amunga
+                </h3>
+                <p className="text-secondary-600 font-bold mb-4 uppercase tracking-wider text-sm">
+                  Founder & CEO
+                </p>
+                <p className="text-slate-600 text-base leading-relaxed mb-6">
+                  Passionate about healthcare and accessible living for the
+                  aging population.
+                </p>
+              </div>
+            </div>
+
+            {/* Founder 2 */}
             <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden group">
               <div className="aspect-[4/5] bg-slate-200 overflow-hidden">
                 <img
@@ -184,33 +211,7 @@ const About: React.FC = () => {
                 </p>
               </div>
             </div>
-            {/* Founder 2 */}
-            <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden group">
-              <div className="aspect-[4/5] bg-slate-200 overflow-hidden">
-                <img
-                  src="/images/founders/monica1.jpeg"
-                  alt="Founder"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  onError={(e) => {
-                    e.currentTarget.src = "";
-                  }}
-                />
-              </div>
-              <div className="p-8 text-center bg-white relative">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-1 bg-secondary-500 rounded-full"></div>
-                <h3 className="text-2xl font-bold text-primary-900 mb-1">
-                  Monica Amunga
-                </h3>
-                <p className="text-secondary-600 font-bold mb-4 uppercase tracking-wider text-sm">
-                  Founder & CEO
-                </p>
-                <p className="text-slate-600 text-base leading-relaxed mb-6">
-                  Passionate about healthcare and accessible living for the
-                  aging population.
-                </p>
-              </div>
-            </div>
-            {/* Founder 3 */}
+
             <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden group">
               <div className="aspect-[4/5] bg-slate-200 overflow-hidden">
                 <img
