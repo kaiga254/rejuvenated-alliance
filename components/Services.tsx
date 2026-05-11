@@ -6,6 +6,9 @@ import {
   Scale,
   Utensils,
   TrendingUp,
+  Leaf,
+  HandHeart,
+  Home,
 } from "lucide-react";
 import { ServiceCardProps } from "../types";
 import ProgramDetailModal from "./ProgramDetailModal";
@@ -113,6 +116,87 @@ const services: ServiceCardProps[] = [
       "Home-delivered meals for homebound seniors",
       "Gardening projects for fresh produce",
       "Emergency food vouchers",
+    ],
+  },
+  {
+    title: "Climate Change Awareness",
+    description:
+      "Educating community members on environmental conservation and sustainable practices that build resilience to climate-related challenges.",
+    icon: <Leaf className="h-8 w-8 text-emerald-500" />,
+    image: "/images/legal-advocacy.jpg",
+    slideImages: ["/images/legal-advocacy.jpg"],
+    detailedDescription: `RSA supports seniors, widows, widowers, and their wider communities with climate change awareness that connects environmental care to everyday resilience. Through community education, practical demonstrations, and local dialogue, the program promotes conservation, sustainable farming practices, responsible resource use, and preparedness for climate-related challenges.
+
+The initiative helps households understand how changing weather patterns affect food security, health, livelihoods, and safe living conditions. By encouraging climate-resilient choices at household and community level, RSA strengthens long-term well-being while protecting the environment for future generations.`,
+    benefits: [
+      "Greater community understanding of climate change and its local effects",
+      "Improved household resilience to climate-related risks",
+      "Stronger environmental conservation practices",
+      "Better food security through sustainable land and resource use",
+      "Increased community participation in protecting shared natural resources",
+      "Practical knowledge that seniors can share across generations",
+    ],
+    features: [
+      "Environmental conservation awareness sessions",
+      "Education on sustainable farming and household practices",
+      "Community discussions on climate resilience",
+      "Tree planting and local conservation activities",
+      "Guidance on responsible water, soil, and waste management",
+      "Climate-smart practices for vulnerable households",
+    ],
+  },
+  {
+    title: "Daycare Services",
+    description:
+      "Providing safe spaces and care support for elderly persons who need assistance, companionship, and social interaction.",
+    icon: <HandHeart className="h-8 w-8 text-rose-500" />,
+    image: "/images/health-wellness.jpg",
+    slideImages: ["/images/health-wellness.jpg"],
+    detailedDescription: `RSA's daycare services provide a safe, welcoming environment for elderly persons who need assistance during the day, meaningful companionship, and opportunities for social interaction. The program is designed to reduce isolation, support emotional well-being, and give seniors a dependable place where they are seen, cared for, and engaged.
+
+Through supervised care, group activities, wellness check-ins, and social support, the daycare program also helps families and caregivers who need trusted daytime assistance for elderly loved ones. It strengthens dignity, belonging, and practical care for seniors who may otherwise spend long hours alone.`,
+    benefits: [
+      "Safe daytime care for elderly persons who need support",
+      "Reduced loneliness through companionship and social interaction",
+      "Improved emotional and psychosocial well-being",
+      "Support for families and caregivers",
+      "Regular engagement in age-appropriate activities",
+      "A trusted community space where seniors feel valued",
+    ],
+    features: [
+      "Supervised safe spaces for elderly persons",
+      "Group conversations and social activities",
+      "Basic wellness monitoring and care support",
+      "Assistance with daily comfort and companionship needs",
+      "Caregiver relief and family support",
+      "Inclusive activities that encourage dignity and belonging",
+    ],
+  },
+  {
+    title: "Improving Housing",
+    description:
+      "Improving safe living spaces through housing repairs, fumigation, jigger treatment, bedding support, and safer household conditions.",
+    icon: <Home className="h-8 w-8 text-amber-600" />,
+    image: "/images/leadership.jpg",
+    slideImages: ["/images/leadership.jpg"],
+    detailedDescription: `RSA improves housing conditions for vulnerable elderly persons by helping create safer, cleaner, and more dignified living spaces. The program supports practical home improvements such as safe housing assistance, smearing houses with mud, fumigation, jigger treatment, bedbug eradication, replacement of damaged iron sheets, and provision of bedding.
+
+These interventions protect seniors from unsafe shelter, pests, disease exposure, and poor sleeping conditions. By improving the home environment, RSA helps elderly widows and widowers live with greater safety, comfort, dignity, and health.`,
+    benefits: [
+      "Safer and more dignified living spaces for elderly persons",
+      "Reduced exposure to pests, jiggers, bedbugs, and related health risks",
+      "Improved household hygiene and comfort",
+      "Better protection from weather through basic shelter repairs",
+      "Greater dignity through bedding and household support",
+      "Improved well-being for vulnerable seniors living in unsafe conditions",
+    ],
+    features: [
+      "Safe housing support for vulnerable elderly households",
+      "Smearing houses with mud to improve walls and living conditions",
+      "Fumigation and bedbug eradication",
+      "Treatment and prevention support for jiggers",
+      "Replacement of damaged iron sheets where needed",
+      "Provision of bedding and basic household comfort items",
     ],
   },
   {
