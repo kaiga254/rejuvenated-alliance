@@ -22,8 +22,8 @@ const Footer: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
             {/* Brand */}
             <div>
-              <div className="flex items-center mb-4">
-                <img src="/images/rsa-logo.png" alt="" />
+              <div className="flex items-center h-16 w-16 mb-4">
+                <img src="/images/rsa-logo.jpeg" alt="" />
                 {/* <Heart className="h-6 w-6 text-secondary-500 mr-2" />
                 <span className="text-2xl font-serif font-bold text-white">
                   Rejuvenated Seniors
